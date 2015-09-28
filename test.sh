@@ -1,0 +1,1 @@
+GRAYLOG_LABEL=test GRAYLOG_HOST=10.244.169.10 GRAYLOG_PORT=12201 td-agent -c td-agent.conf -v

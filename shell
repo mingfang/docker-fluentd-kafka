@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker run -e LABEL=`hostname -s` -e ZOOKEEPER="zookeeper:2181" --dns 192.168.1.160 -v /var/log:/var/log -v `pwd`/td-agent.conf:/etc/td-agent/td-agent.conf -v `pwd`:/docker -w /docker --rm -it fluentd-kafka /bin/bash
+
