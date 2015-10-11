@@ -6,4 +6,4 @@ source /etc/envvars
 env
 
 exec 2>&1
-exec td-agent
+exec td-agent --no-supervisor
