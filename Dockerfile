@@ -22,7 +22,7 @@ RUN apt-get install -y --no-install-recommends build-essential
 
 RUN curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-trusty-td-agent2.sh | sh
 
-RUN /usr/sbin/td-agent-gem install --no-ri --no-rdoc fluent-plugin-kafka 
+RUN /usr/sbin/td-agent-gem install --no-ri --no-rdoc fluent-plugin-kafka zookeeper
 
 COPY td-agent.conf /etc/td-agent/td-agent.conf
 
